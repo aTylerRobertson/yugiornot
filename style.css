@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+body {
+  margin: 0;
+  background: rgb(155,89,182);
+  background: radial-gradient(circle, rgba(155,89,182,1) 0%, rgba(142,68,173,1) 23%, rgba(44,62,80,1) 100%);
+  color: white;
+  font-family: 'Staatliches', cursive;
+}
+
+#masthead {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  width: 30vw;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#masthead h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+#masthead h2 {
+  margin: 0;
+}
+
+h2 a,
+h2 a:visited {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+h2 a:hover,
+h2 a:active {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+.option {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3em;
+  transform: translate(-50%,-50%);
+}
+
+#real,
+#fake {
+  background: transparent;
+  position: absolute;
+  height: 100vh;
+  width: 30%;
+  top: 0;
+  cursor: pointer;
+  transition: background-color .25s linear;
+}
+
+#real {
+  left: 0;
+}
+
+#fake {
+  right: 0;
+}
+
+#real h1,
+#fake h1 {
+  transition: color .25s linear;
+  transition: font-size .1s linear;
+  transition: margin .1s linear;
+}
+
+#real h1 {
+  text-shadow: 2px 2px 0px #27ae60;
+}
+
+#fake h1 {
+  text-shadow: -2px 2px 0px #c0392b;
+}
+
+#real:hover h1,
+#fake:hover h1 {
+  font-size: 3.5em;
+  line-height: 2em;
+  text-shadow: none;
+}
+
+#real:hover h1 {
+  color: #27ae60;
+}
+
+#fake:hover h1 {
+  color: #e74c3c;
+}
+
+#card {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  font-size: 3em;
+  line-height: 2em;
+  transform: translate(-50%,-50%);
+}
+
+#card-name {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-70%);
+  text-shadow: 5px 5px 0px rgba(44,62,80,1);
+}
+
+#scorecard {
+  text-align: center;
+  font-size: 2em;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
